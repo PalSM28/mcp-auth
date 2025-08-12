@@ -1,0 +1,301 @@
+2025-08-12T11:50:10.429-04:00  INFO 42064 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : Starting AuthServiceApplication using Java 17.0.12 with PID 42064 (C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service\target\classes started by sagar in C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service)
+2025-08-12T11:50:10.462-04:00  INFO 42064 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T11:50:16.012-04:00  INFO 42064 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T11:50:16.638-04:00  INFO 42064 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 591 ms. Found 1 JPA repository interface.
+2025-08-12T11:50:17.773-04:00  INFO 42064 --- [auth-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=63888893-2389-3efa-a926-6e4a78914cb4
+2025-08-12T11:50:19.716-04:00  INFO 42064 --- [auth-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8060 (http)
+2025-08-12T11:50:19.759-04:00  INFO 42064 --- [auth-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T11:50:19.760-04:00  INFO 42064 --- [auth-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T11:50:20.293-04:00  INFO 42064 --- [auth-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T11:50:20.300-04:00  INFO 42064 --- [auth-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9579 ms
+2025-08-12T11:50:21.452-04:00  INFO 42064 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T11:50:22.308-04:00  INFO 42064 --- [auth-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6fa2a006
+2025-08-12T11:50:22.313-04:00  INFO 42064 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T11:50:22.473-04:00  INFO 42064 --- [auth-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-12T11:50:22.795-04:00  INFO 42064 --- [auth-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-12T11:50:22.962-04:00  INFO 42064 --- [auth-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-12T11:50:24.069-04:00  INFO 42064 --- [auth-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-12T11:50:24.430-04:00  INFO 42064 --- [auth-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-12T11:50:27.998-04:00  INFO 42064 --- [auth-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-12T11:50:28.027-04:00  INFO 42064 --- [auth-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T11:50:31.419-04:00  WARN 42064 --- [auth-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-12T11:50:34.183-04:00  INFO 42064 --- [auth-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12T11:50:34.346-04:00  WARN 42064 --- [auth-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6e38df2f-0e98-4e74-b1cd-04aff92bb6d8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T11:50:34.449-04:00  INFO 42064 --- [auth-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-12T11:50:34.752-04:00  INFO 42064 --- [auth-service] [main] c.n.a.security.ApiKeyAuthFilter          : Inside Auth Service Security Config:
+2025-08-12T11:50:37.455-04:00  INFO 42064 --- [auth-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T11:50:37.563-04:00  WARN 42064 --- [auth-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T11:50:38.100-04:00  INFO 42064 --- [auth-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T11:50:38.242-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T11:50:38.287-04:00  INFO 42064 --- [auth-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T11:50:38.324-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T11:50:38.326-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T11:50:38.327-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T11:50:38.328-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T11:50:38.328-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T11:50:38.328-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T11:50:38.330-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T11:50:39.975-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T11:50:39.981-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T11:50:40.000-04:00  INFO 42064 --- [auth-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T11:50:40.009-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755013840005 with initial instances count: 1
+2025-08-12T11:50:40.018-04:00  INFO 42064 --- [auth-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2025-08-12T11:50:40.020-04:00  INFO 42064 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755013840020, current=UP, previous=STARTING]
+2025-08-12T11:50:40.026-04:00  INFO 42064 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.0.14:auth-service:8060: registering service...
+2025-08-12T11:50:40.084-04:00  INFO 42064 --- [auth-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8060 (http) with context path '/'
+2025-08-12T11:50:40.090-04:00  INFO 42064 --- [auth-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8060
+2025-08-12T11:50:40.164-04:00  INFO 42064 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.0.14:auth-service:8060 - registration status: 204
+2025-08-12T11:50:40.872-04:00  INFO 42064 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : Started AuthServiceApplication in 35.467 seconds (process running for 40.498)
+2025-08-12T11:50:41.639-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T11:50:41.639-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T11:50:41.645-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-08-12T11:51:23.671-04:00  INFO 42064 --- [auth-service] [http-nio-8060-exec-1] c.n.a.security.ApiKeyAuthFilter          : Auth Service Request: POST /auth/validate-key from IP: 192.168.0.14 with API Key: Present
+2025-08-12T11:51:25.346-04:00  INFO 42064 --- [auth-service] [http-nio-8060-exec-1] com.ninja.auth_service.utility.JwtUtil   : Generating JWT token for client: ThyroBalance
+2025-08-12T11:51:25.860-04:00  INFO 42064 --- [auth-service] [http-nio-8060-exec-1] c.n.a.security.ApiKeyAuthFilter          : Auth Service Response: 200 for POST /auth/validate-key from IP: 192.168.0.14
+2025-08-12T11:55:38.340-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:00:38.341-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:05:38.343-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:10:38.347-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:15:38.362-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:20:39.803-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:25:39.807-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:30:39.811-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:35:39.815-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:40:39.818-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:49:11.708-04:00  WARN 42064 --- [auth-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m47s50ms742µs700ns).
+2025-08-12T12:53:10.064-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:11:01.379-04:00  WARN 42064 --- [auth-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m19s584ms378µs800ns).
+2025-08-12T13:13:59.648-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:18:59.660-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:23:59.669-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:28:59.690-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:33:59.702-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:38:59.716-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:05:02.310-04:00  WARN 42064 --- [auth-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m30s566ms775µs900ns).
+2025-08-12T14:08:00.298-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:13:00.314-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:16:36.509-04:00  INFO 42616 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : Starting AuthServiceApplication using Java 17.0.12 with PID 42616 (C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service\target\classes started by sagar in C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service)
+2025-08-12T14:16:36.515-04:00  INFO 42616 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:16:39.053-04:00  INFO 42616 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T14:16:39.413-04:00  INFO 42616 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 339 ms. Found 1 JPA repository interface.
+2025-08-12T14:16:40.262-04:00  INFO 42616 --- [auth-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=63888893-2389-3efa-a926-6e4a78914cb4
+2025-08-12T14:16:41.052-04:00  INFO 42616 --- [auth-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8060 (http)
+2025-08-12T14:16:41.085-04:00  INFO 42616 --- [auth-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T14:16:41.086-04:00  INFO 42616 --- [auth-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T14:16:41.274-04:00  INFO 42616 --- [auth-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T14:16:41.276-04:00  INFO 42616 --- [auth-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4638 ms
+2025-08-12T14:17:16.428-04:00  INFO 42616 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T14:18:00.325-04:00  INFO 42064 --- [auth-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:18:02.668-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(119)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-12T14:18:02.803-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(119)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTH-SERVICE with eureka with status DOWN
+2025-08-12T14:18:02.805-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(119)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755022682805, current=DOWN, previous=UP]
+2025-08-12T14:18:02.807-04:00  INFO 42064 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.0.14:auth-service:8060: registering service...
+2025-08-12T14:18:02.963-04:00  INFO 42064 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.0.14:auth-service:8060 - registration status: 204
+2025-08-12T14:18:03.059-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(119)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T14:18:03.819-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(120)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-12T14:18:03.873-04:00  WARN 42064 --- [auth-service] [RMI TCP Connection(119)-127.0.0.1] org.apache.tomcat.util.net.Acceptor      : Interrupt was received while waiting for the acceptor thread [http-nio-8060-Acceptor] to stop
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1081) ~[na:na]
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:276) ~[na:na]
+	at org.apache.tomcat.util.net.Acceptor.stopMillis(Acceptor.java:184) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint.stopInternal(NioEndpoint.java:328) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.AbstractEndpoint.stop(AbstractEndpoint.java:1522) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol.stop(AbstractProtocol.java:721) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.Connector.stopInternal(Connector.java:1123) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardService.removeConnector(StandardService.java:299) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.lambda$removeServiceConnectors$1(TomcatWebServer.java:173) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.doWithConnectors(TomcatWebServer.java:192) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.removeServiceConnectors(TomcatWebServer.java:170) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:358) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.stop(WebServerStartStopLifecycle.java:53) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:120) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:463) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:618) ~[spring-context-6.2.9.jar:6.2.9]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:432) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:323) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1172) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.5.4.jar:3.5.4]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-08-12T14:18:04.364-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(119)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T14:18:04.538-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(119)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-12T14:18:04.644-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(119)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-12T14:18:04.657-04:00  INFO 42064 --- [auth-service] [RMI TCP Connection(119)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-12T14:18:47.707-04:00  INFO 16440 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : Starting AuthServiceApplication using Java 17.0.12 with PID 16440 (C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service\target\classes started by sagar in C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service)
+2025-08-12T14:18:47.712-04:00  INFO 16440 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:19:34.619-04:00  INFO 7180 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : Starting AuthServiceApplication using Java 17.0.12 with PID 7180 (C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service\target\classes started by sagar in C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service)
+2025-08-12T14:19:34.623-04:00  INFO 7180 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:19:36.624-04:00  INFO 7180 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T14:19:36.920-04:00  INFO 7180 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 274 ms. Found 1 JPA repository interface.
+2025-08-12T14:19:37.368-04:00  INFO 7180 --- [auth-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=63888893-2389-3efa-a926-6e4a78914cb4
+2025-08-12T14:19:38.064-04:00  INFO 7180 --- [auth-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8060 (http)
+2025-08-12T14:19:38.086-04:00  INFO 7180 --- [auth-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T14:19:38.086-04:00  INFO 7180 --- [auth-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T14:19:38.198-04:00  INFO 7180 --- [auth-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T14:19:38.198-04:00  INFO 7180 --- [auth-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3494 ms
+2025-08-12T14:19:52.805-04:00  INFO 7180 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T14:20:24.624-04:00  INFO 7180 --- [auth-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ceb11f9
+2025-08-12T14:20:25.109-04:00  INFO 7180 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T14:21:12.060-04:00  INFO 7180 --- [auth-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-12T14:22:14.611-04:00  INFO 7180 --- [auth-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-12T14:22:39.949-04:00  INFO 7180 --- [auth-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-12T14:22:58.930-04:00  WARN 7180 --- [auth-service] [HikariPool-1:connection-adder] org.postgresql.core.ConnectionFactory    : Failed to closed stream with error: {0}
+
+java.net.SocketException: Connection reset by peer
+	at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:425) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:445) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:831) ~[na:na]
+	at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1035) ~[na:na]
+	at org.postgresql.util.internal.PgBufferedOutputStream.flushBuffer(PgBufferedOutputStream.java:41) ~[postgresql-42.7.7.jar:42.7.7]
+	at org.postgresql.util.internal.PgBufferedOutputStream.flush(PgBufferedOutputStream.java:48) ~[postgresql-42.7.7.jar:42.7.7]
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153) ~[na:na]
+	at org.postgresql.core.PGStream$1.close(PGStream.java:334) ~[postgresql-42.7.7.jar:42.7.7]
+	at java.base/sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:347) ~[na:na]
+	at java.base/sun.nio.cs.StreamEncoder.close(StreamEncoder.java:169) ~[na:na]
+	at java.base/java.io.OutputStreamWriter.close(OutputStreamWriter.java:252) ~[na:na]
+	at org.postgresql.core.PGStream.close(PGStream.java:734) ~[postgresql-42.7.7.jar:42.7.7]
+	at org.postgresql.core.ConnectionFactory.closeStream(ConnectionFactory.java:92) ~[postgresql-42.7.7.jar:42.7.7]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:238) ~[postgresql-42.7.7.jar:42.7.7]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.7.jar:42.7.7]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.7.jar:42.7.7]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:277) ~[postgresql-42.7.7.jar:42.7.7]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.7.jar:42.7.7]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.7.jar:42.7.7]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752) ~[HikariCP-6.3.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731) ~[HikariCP-6.3.1.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-08-12T14:33:03.616-04:00  INFO 21044 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : Starting AuthServiceApplication using Java 17.0.12 with PID 21044 (C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service\target\classes started by sagar in C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\auth-service)
+2025-08-12T14:33:03.623-04:00  INFO 21044 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:33:06.490-04:00  INFO 21044 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-12T14:33:07.087-04:00  INFO 21044 --- [auth-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 565 ms. Found 1 JPA repository interface.
+2025-08-12T14:33:08.267-04:00  INFO 21044 --- [auth-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=63888893-2389-3efa-a926-6e4a78914cb4
+2025-08-12T14:33:09.938-04:00  INFO 21044 --- [auth-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8060 (http)
+2025-08-12T14:33:09.993-04:00  INFO 21044 --- [auth-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-12T14:33:09.994-04:00  INFO 21044 --- [auth-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12T14:33:10.298-04:00  INFO 21044 --- [auth-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-12T14:33:10.301-04:00  INFO 21044 --- [auth-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6568 ms
+2025-08-12T14:33:11.142-04:00  INFO 21044 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-12T14:33:11.926-04:00  INFO 21044 --- [auth-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2d459bda
+2025-08-12T14:33:11.932-04:00  INFO 21044 --- [auth-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-12T14:33:12.175-04:00  INFO 21044 --- [auth-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-12T14:33:12.612-04:00  INFO 21044 --- [auth-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-12T14:33:12.862-04:00  INFO 21044 --- [auth-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-12T14:33:14.239-04:00  INFO 21044 --- [auth-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-12T14:33:14.766-04:00  INFO 21044 --- [auth-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-12T14:33:18.002-04:00  INFO 21044 --- [auth-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-12T14:33:18.011-04:00  INFO 21044 --- [auth-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-12T14:33:19.089-04:00  WARN 21044 --- [auth-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-12T14:33:20.847-04:00  INFO 21044 --- [auth-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12T14:33:20.966-04:00  WARN 21044 --- [auth-service] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 90e4fc5b-3029-458d-8d3b-6d49b207201d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-12T14:33:20.999-04:00  INFO 21044 --- [auth-service] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-12T14:33:21.182-04:00  INFO 21044 --- [auth-service] [main] c.n.a.security.ApiKeyAuthFilter          : Inside Auth Service Security Config:
+2025-08-12T14:33:22.689-04:00  INFO 21044 --- [auth-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T14:33:22.744-04:00  WARN 21044 --- [auth-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T14:33:22.927-04:00  INFO 21044 --- [auth-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T14:33:22.979-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T14:33:22.987-04:00  INFO 21044 --- [auth-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:33:23.006-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T14:33:23.006-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T14:33:23.006-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T14:33:23.006-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T14:33:23.007-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T14:33:23.007-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T14:33:23.007-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T14:33:24.486-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T14:33:24.489-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T14:33:24.498-04:00  INFO 21044 --- [auth-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T14:33:24.502-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755023604501 with initial instances count: 0
+2025-08-12T14:33:24.512-04:00  INFO 21044 --- [auth-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2025-08-12T14:33:24.514-04:00  INFO 21044 --- [auth-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755023604514, current=UP, previous=STARTING]
+2025-08-12T14:33:24.518-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.0.14:auth-service:8060: registering service...
+2025-08-12T14:33:24.572-04:00  INFO 21044 --- [auth-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8060 (http) with context path '/'
+2025-08-12T14:33:24.575-04:00  INFO 21044 --- [auth-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8060
+2025-08-12T14:33:24.886-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/192.168.0.14:auth-service:8060 - registration status: 204
+2025-08-12T14:33:25.336-04:00  INFO 21044 --- [auth-service] [main] c.n.auth_service.AuthServiceApplication  : Started AuthServiceApplication in 23.447 seconds (process running for 27.292)
+2025-08-12T14:33:26.203-04:00  INFO 21044 --- [auth-service] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12T14:33:26.204-04:00  INFO 21044 --- [auth-service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-12T14:33:26.211-04:00  INFO 21044 --- [auth-service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-08-12T14:33:54.493-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T14:33:54.494-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T14:33:54.494-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T14:33:54.495-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T14:33:54.495-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T14:33:54.495-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-08-12T14:33:54.496-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T14:33:54.546-04:00  INFO 21044 --- [auth-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
