@@ -1,0 +1,196 @@
+2025-08-12T11:49:21.933-04:00  INFO 38792 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : Starting ApiGatewayApplication using Java 17.0.12 with PID 38792 (C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\api-gateway\target\classes started by sagar in C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\api-gateway)
+2025-08-12T11:49:21.948-04:00 DEBUG 38792 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-12T11:49:21.951-04:00  INFO 38792 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T11:49:25.624-04:00  INFO 38792 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f911df49-fad5-314e-a318-edf7ce2c9739
+2025-08-12T11:49:27.834-04:00  INFO 38792 --- [api-gateway] [main] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 86a655df-5bfd-4643-9ecb-33e9bd6f4a35
+
+2025-08-12T11:49:28.859-04:00  WARN 38792 --- [api-gateway] [main] GatewayClassPathWarningAutoConfiguration : 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-08-12T11:49:30.746-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-08-12T11:49:30.747-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-08-12T11:49:30.748-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-08-12T11:49:30.749-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-08-12T11:49:30.750-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-08-12T11:49:30.750-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-08-12T11:49:30.751-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-08-12T11:49:30.751-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-08-12T11:49:30.752-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-08-12T11:49:30.752-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-08-12T11:49:30.752-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-08-12T11:49:30.753-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-08-12T11:49:30.753-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-08-12T11:49:30.754-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-08-12T11:49:32.299-04:00  INFO 38792 --- [api-gateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12T11:49:33.274-04:00  INFO 38792 --- [api-gateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T11:49:33.327-04:00  WARN 38792 --- [api-gateway] [main] s.w.s.StarterDeprecatedAutoConfiguration : 
+
+**********************************************************
+
+spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+
+**********************************************************
+
+
+2025-08-12T11:49:33.349-04:00  WARN 38792 --- [api-gateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T11:49:33.675-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T11:49:33.825-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T11:49:33.864-04:00  INFO 38792 --- [api-gateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T11:49:33.920-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T11:49:33.921-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T11:49:33.922-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T11:49:33.922-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T11:49:33.923-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T11:49:33.924-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T11:49:33.924-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T11:49:35.686-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T11:49:35.690-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T11:49:35.696-04:00  INFO 38792 --- [api-gateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T11:49:35.700-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755013775698 with initial instances count: 0
+2025-08-12T11:49:35.712-04:00  INFO 38792 --- [api-gateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2025-08-12T11:49:35.714-04:00  INFO 38792 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755013775714, current=UP, previous=STARTING]
+2025-08-12T11:49:35.715-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.0.14:api-gateway:8081: registering service...
+2025-08-12T11:49:35.716-04:00  WARN 38792 --- [api-gateway] [main] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-12T11:49:36.138-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.0.14:api-gateway:8081 - registration status: 204
+2025-08-12T11:49:36.737-04:00  INFO 38792 --- [api-gateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081 (http)
+2025-08-12T11:49:36.742-04:00  INFO 38792 --- [api-gateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-12T11:49:39.074-04:00  INFO 38792 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : Started ApiGatewayApplication in 20.5 seconds (process running for 23.803)
+2025-08-12T11:49:39.100-04:00  WARN 38792 --- [api-gateway] [main] o.s.b.c.p.m.PropertiesMigrationListener  : 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'Config resource 'class path resource [application.yml]' via location 'optional:classpath:/'':
+	Key: spring.cloud.gateway.discovery.locator.enabled
+		Line: 11
+		Replacement: spring.cloud.gateway.server.webflux.discovery.locator.enabled
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+2025-08-12T11:50:05.693-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T11:50:05.695-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T11:50:05.699-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T11:50:05.699-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T11:50:05.699-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T11:50:05.700-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-08-12T11:50:05.700-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T11:50:05.771-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T11:54:33.946-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T11:59:33.966-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:04:33.976-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:09:33.993-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:14:33.999-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:19:35.440-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:24:35.452-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:29:35.462-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:34:35.475-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:39:35.489-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T12:52:05.720-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:12:55.310-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:17:55.320-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:22:55.324-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:27:55.328-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:32:55.342-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T13:37:55.347-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:06:55.921-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:11:55.938-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:16:55.939-04:00  INFO 38792 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:18:10.646-04:00  INFO 38792 --- [api-gateway] [RMI TCP Connection(123)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-12T14:18:10.765-04:00  INFO 38792 --- [api-gateway] [RMI TCP Connection(123)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2025-08-12T14:18:10.773-04:00  INFO 38792 --- [api-gateway] [RMI TCP Connection(123)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755022690772, current=DOWN, previous=UP]
+2025-08-12T14:18:10.800-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755022690800, current=UP, previous=DOWN]
+2025-08-12T14:18:10.802-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.0.14:api-gateway:8081: registering service...
+2025-08-12T14:18:10.894-04:00  INFO 38792 --- [api-gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.0.14:api-gateway:8081 - registration status: 204
+2025-08-12T14:18:11.004-04:00  INFO 38792 --- [api-gateway] [RMI TCP Connection(123)-127.0.0.1] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12T14:18:11.145-04:00  INFO 38792 --- [api-gateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-08-12T14:18:13.352-04:00  INFO 38792 --- [api-gateway] [RMI TCP Connection(123)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-12T14:18:16.355-04:00  INFO 38792 --- [api-gateway] [RMI TCP Connection(123)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-12T14:18:16.683-04:00  INFO 38792 --- [api-gateway] [RMI TCP Connection(123)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.0.14:api-gateway:8081 - deregister  status: 200
+2025-08-12T14:18:16.687-04:00  INFO 38792 --- [api-gateway] [RMI TCP Connection(123)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-12T14:29:05.297-04:00  INFO 22748 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : Starting ApiGatewayApplication using Java 17.0.12 with PID 22748 (C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\api-gateway\target\classes started by sagar in C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\api-gateway)
+2025-08-12T14:29:05.303-04:00 DEBUG 22748 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-12T14:29:05.306-04:00  INFO 22748 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:29:09.168-04:00  INFO 22748 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f911df49-fad5-314e-a318-edf7ce2c9739
+2025-08-12T14:34:37.612-04:00  INFO 36824 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : Starting ApiGatewayApplication using Java 17.0.12 with PID 36824 (C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\api-gateway\target\classes started by sagar in C:\Pallavi\NumpyNinja\Project\MCP Sample Code\microservices-demo\diet_plan_repo\api-gateway)
+2025-08-12T14:34:37.620-04:00 DEBUG 36824 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-12T14:34:37.622-04:00  INFO 36824 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-08-12T14:34:41.895-04:00  INFO 36824 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f911df49-fad5-314e-a318-edf7ce2c9739
+2025-08-12T14:34:43.972-04:00  INFO 36824 --- [api-gateway] [main] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 981c9d29-1442-4b92-93d3-e730338515cc
+
+2025-08-12T14:34:45.059-04:00  WARN 36824 --- [api-gateway] [main] GatewayClassPathWarningAutoConfiguration : 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-08-12T14:34:46.816-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-08-12T14:34:46.817-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-08-12T14:34:46.817-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-08-12T14:34:46.817-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-08-12T14:34:46.817-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-08-12T14:34:46.819-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-08-12T14:34:46.819-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-08-12T14:34:46.819-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-08-12T14:34:46.819-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-08-12T14:34:46.820-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-08-12T14:34:46.820-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-08-12T14:34:46.821-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-08-12T14:34:46.821-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-08-12T14:34:46.821-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-08-12T14:34:48.043-04:00  INFO 36824 --- [api-gateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12T14:34:48.905-04:00  INFO 36824 --- [api-gateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-12T14:34:48.953-04:00  WARN 36824 --- [api-gateway] [main] s.w.s.StarterDeprecatedAutoConfiguration : 
+
+**********************************************************
+
+spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+
+**********************************************************
+
+
+2025-08-12T14:34:48.976-04:00  WARN 36824 --- [api-gateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-12T14:34:49.211-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-12T14:34:49.295-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-12T14:34:49.322-04:00  INFO 36824 --- [api-gateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-12T14:34:49.361-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-12T14:34:49.362-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-12T14:34:49.362-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-12T14:34:49.362-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-12T14:34:49.362-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-12T14:34:49.363-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-12T14:34:49.363-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-12T14:34:50.697-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-12T14:34:50.703-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-12T14:34:50.713-04:00  INFO 36824 --- [api-gateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-12T14:34:50.719-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755023690715 with initial instances count: 1
+2025-08-12T14:34:50.730-04:00  INFO 36824 --- [api-gateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2025-08-12T14:34:50.732-04:00  INFO 36824 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755023690732, current=UP, previous=STARTING]
+2025-08-12T14:34:50.733-04:00  INFO 36824 --- [api-gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.0.14:api-gateway:8081: registering service...
+2025-08-12T14:34:50.733-04:00  WARN 36824 --- [api-gateway] [main] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-12T14:34:50.964-04:00  INFO 36824 --- [api-gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/192.168.0.14:api-gateway:8081 - registration status: 204
+2025-08-12T14:34:51.921-04:00  INFO 36824 --- [api-gateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081 (http)
+2025-08-12T14:34:51.927-04:00  INFO 36824 --- [api-gateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-12T14:34:53.472-04:00  INFO 36824 --- [api-gateway] [main] c.n.api_gateway.ApiGatewayApplication    : Started ApiGatewayApplication in 17.981 seconds (process running for 21.058)
+2025-08-12T14:34:53.485-04:00  WARN 36824 --- [api-gateway] [main] o.s.b.c.p.m.PropertiesMigrationListener  : 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'Config resource 'class path resource [application.yml]' via location 'optional:classpath:/'':
+	Key: spring.cloud.gateway.discovery.locator.enabled
+		Line: 11
+		Replacement: spring.cloud.gateway.server.webflux.discovery.locator.enabled
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+

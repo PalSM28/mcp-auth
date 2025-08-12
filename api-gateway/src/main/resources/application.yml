@@ -1,0 +1,72 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+# Eureka Configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    healthcheck:
+      enabled: true
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true 
+
+  main:
+    web-application-type: reactive
+# Cloud Gateway Configuration
+  cloud:
+    gateway:
+      # Global CORS configuration
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins: "*"
+            allowed-methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowed-headers: "*"
+            allow-credentials: false
+# Route definitions
+      routes:
+        - id: mcp-client-service
+          uri: lb://MCP-CLIENT
+          predicates:
+            - Path=/mcp/**
+          filters:
+           - AuthenticationFilter
+
+        - id: auth-service
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/auth/**
+          
+# JWT Configuration        
+jwt:
+  secret: Dbd+9PYdWRN4l8OaX+oJrL5X95SCky8uw6HYPKkzGVs3z7OfIpCKr3qYoTVy7nZW/4h4uUyutak6G0kp1y3qRwQ==
+  expiration: 3600000
+
+logging:
+  level:
+    com.ninja.api_gateway: DEBUG
+
+auth-service:
+  url: http://localhost:8060
+
+mcp-client-service:
+  url: http://localhost:9090
+
+
+  
